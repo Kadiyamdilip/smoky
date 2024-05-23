@@ -41,6 +41,22 @@
                 </div>
                 <!-- Add more flavors as needed -->
             </div>
+			<div class="brand">
+                <h2>Arizona</h2>
+                <div class="drink">
+                    <label for="Arizona_strawberry">Strawberry: </label>
+                    <input type="number" id="Arizona_strawberry" name="Arizona_strawberry" min="0" required>
+                </div>
+                <div class="drink">
+                    <label for="Arizona_mango">Mango: </label>
+                    <input type="number" id="Arizona_mango" name="Arizona_mango" min="0" required>
+                </div>
+                <div class="drink">
+                    <label for="Arizona_grape">Grape: </label>
+                    <input type="number" id="Arizona_grape" name="Arizona_grape" min="0" required>
+                </div>
+                <!-- Add more flavors as needed -->
+            </div>
             <button type="submit">Submit</button>
         </form>
         <div id="message"></div>
@@ -58,6 +74,9 @@
                 {id: 'tropical_fantasy_strawberry', name: 'Tropical Fantasy Strawberry'},
                 {id: 'tropical_fantasy_mango', name: 'Tropical Fantasy Mango'},
                 {id: 'tropical_fantasy_grape', name: 'Tropical Fantasy Grape'},
+				{id: 'Arizona_strawberry', name: 'Arizona Strawberry'},
+                {id: 'Arizona_mango', name: 'Arizona Mango'},
+                {id: 'Arizona_grape', name: 'Arizona Grape'},
                 // Add more flavors as needed
             ];
 
@@ -73,7 +92,7 @@
 
             // Prepare data for Excel
             const data = [
-                ["Drink", "Stock Left"],
+                ["Drink", "bottles Left"],
                 ...stockData
             ];
 
